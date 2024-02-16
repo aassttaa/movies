@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="nav" id="nav">
+        <img src="c:\Users\LEGION-5\Downloads\fast-forward.png" alt="" class="nav_logo">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAACXBIWXMAAC4jAAAuIwF4pT92AAAF+mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTExLTAyVDIwOjQ1OjE3LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIwLTExLTAyVDIwOjQ1OjE3LTAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0xMS0wMlQyMDo0NToxNy0wMzowMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1MTE5NmRlYy04ZWIyLTJmNGUtYTdiMS04ZThiODg1MWNlYTQiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpiM2QxMTg1Zi1mZWMyLWY4NGMtOGNl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" alt="" class="nav_avatar">
+
+    </div>
+    
+    <!--Header -->
+    <div class="bannner" style="background-image: url(https://static.bunnycdn.ru/i/cache/images/f/f5/f5f7794e58ed77776d32c409c94ed348.jpg); background-size: cover; 
+    background-position: center center;
+    color: white;
+    object-fit:contain;
+    height: 448px;
+    ">
+        <div class="banner_contents">
+            <h1 class="bannner_title">Solo Leveling</h1>
+            <div class="banner_buttons">
+                <button class="banner_button">play</button>
+                <button class="banner_button">My List</button>
+            </div>
+            <div class="banneer_description">
+                en years ago, an unknown passageway known as "the Gate" appeared, bridging the gap between the real world and a realm of magic and monsters. Regular folks were granted with
+               extraordinary powers and designated as "Hunters" to fight these malevolent creatures....
+            </div>
+        </div>
+        <div class="banner--fadeBottom"></div>
+    </div>
+   
+   
+    <!--Trending Anime -->
+    <div class="row">
+        <h2>Trending Anime</h2>
+        <div class="row_posters">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/geCRueV3ElhRTr0xtJuEWJt6dJ1.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/fcXdJlbSdUEeMSJFsXKsznGwwok.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/qGObcxuXKcKhP43BqTeIC7KgRcM.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/7ofJNP9C5IOHp2MOeA1NqyKNvnQ.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/dqZENchTd7lp5zht7BdlqM7RBhD.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/9yST7MeDptRait3kWTEnbxIi0pF.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/kzNgrVLZretdovFn62yZCDYZkEG.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/hFWP5HkbVEe40hrXgtCeQxoccHE.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/oGmNWwV3wgp1DZXTOLSAYZZgh3X.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/3Uf8L7wl4dokMukJ855cBLVxQj5.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/vcd9WHPHOEoiFEbz2EBN58IT7ab.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/yid55NfoEc5jsKLRiXcIM8Ei8Ys.jpg" alt="" class="row_poster row_posterLarge">
+
+
+        </div>
+    </div>
+     <!--Popular Anime-->
+     <div class="row">
+        <h2>Popular Anime</h2>
+        <div class="row_posters">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/gC78bsXhdU2PwT3FkLcn8R5YcHb.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/4oy1X4QDgwxmUycIxU7T2VrQkIr.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/u878Dny3e6ajNGLeJJcYq9c60SP.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/ivOLM47yJt90P19RH1NvJrAJz9F.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/uyyMrkDgjnpGFM9dnJEYlUya7O0.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/tolQj5yffSxkEGXusPwNcvYrbph.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/bS6GeCRInMRl6oQN6czCqPFdcHN.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/mt6ForyKh4JS0v5ho8xhauISidF.jpg" alt="" class="row_poster row_posterLarge">
+
+        </div>
+    </div>
+     <!--Currently Airing -->
+     <div class="row">
+        <h2>Currently Airing</h2>
+        <div class="row_posters">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/fcXdJlbSdUEeMSJFsXKsznGwwok.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/dqZENchTd7lp5zht7BdlqM7RBhD.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/geCRueV3ElhRTr0xtJuEWJt6dJ1.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/qGObcxuXKcKhP43BqTeIC7KgRcM.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/hSKD1ysKYJ36t6iUSf8dN3C76Se.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/cnX4sZ6pz7CdbtxmIEb9Gds5c9E.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/vcd9WHPHOEoiFEbz2EBN58IT7ab.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://image.tmdb.org/t/p/w440_and_h660_face/aCGdpgNkgz66R1winFkTFsMAhlC.jpg" alt="" class="row_poster row_posterLarge">
+
+        </div>
+    </div>
+    <!--Anime Collection-->
+    <div class="row">
+        <h2>Anime Collection</h2>
+        <div class="row_posters">
+            <img src="https://image.tmdb.org/t/p/original/ePfS2ZOXZbLCVmoivxa6uDSRRGg.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21355-IHaS50pvLYd0.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx11757-Q9P2zjCPICq5.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-C6FPmWm59CyP.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx918-hRbQHIkRUebX.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5081-mzWo8ZayqhES.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131573-rpl82vDEDRm6.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-PEn1CTc93blC.jpg" alt="" class="row_poster row_posterLarge">
+
+        </div>
+    </div>
+
+
+
+    <script>
+        const nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >=100) {
+                nav.classList.add('nav_black');
+            }else{
+                nav.classList.remove('nav_black');
+            }
+        });
+    </script>
+</body>
+</html>
